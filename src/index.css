@@ -16,8 +16,38 @@
   --color-neutral-alabaster: hsl(231, 100%, 99%);
 }
 
+@layer base {
+  body {
+    @apply bg-neutral-alabaster font-ubuntu;
+  }
+
+  h1 {
+    @apply text-3xl font-bold text-primary-marine-blue;
+  }
+
+  p {
+    @apply text-neutral-cool-gray;
+  }
+
+  div {
+    @apply text-neutral-cool-gray;
+  }
+}
+
 @layer components {
   .wrapper {
     @apply max-w-[768px] mx-auto px-6;
+  }
+
+  .form-label {
+    @apply text-primary-marine-blue capitalize;
+  }
+
+  .form-input {
+    @apply w-full outline-primary-purplish-blue focus:outline-[0.5px] p-3 border-1 border-neutral-light-gray rounded-lg text-neutral-cool-gray;
+  }
+
+  .cta-1 {
+    @apply bg-primary-marine-blue text-white  capitalize px-4 py-2 rounded-md hover:bg-primary-purplish-blue transition-all duration-200;
   }
 }
