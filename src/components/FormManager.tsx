@@ -9,7 +9,7 @@ import Sidebar from "./Sidebar";
 const FormManager = () => {
   const { form } = useFormContext(FormContext);
   return (
-    <div className="bg-white shadow-xl shadow-neutral-light-gray rounded-2xl px-6 py-6 w-full md:max-w-[960px]">
+    <div className="bg-white shadow-xl shadow-neutral-light-gray rounded-2xl px-6 py-6 md:max-w-[960px] md:w-full ">
       <div className="flex flex-row  w-full ">
         {/** Sidebar desktop*/}
         <div className="relative hidden md:flex basis-1/3 rounded-xl h-full">

@@ -7,14 +7,14 @@ import { FormContext, useFormContext } from "./contexts/FormContext";
 function App() {
   const { form } = useFormContext(FormContext);
   return (
-    <div className="md:h-screen">
+    <div className="md:flex md:items-center md:h-screen">
       {/** Mobile sidebar */}
       <div className="absolute -z-1 md:hidden">
         <Sidebar />
       </div>
 
       {/** Form manager*/}
-      <div className="wrapper flex flex-col space-y-8 pt-8 md:space-y-0 md:pt-0 md:items-center">
+      <div className="wrapper flex flex-col space-y-8 pt-8 md:space-y-0 md:pt-0 w-full">
         {/** Progress indicator section mobile */}
         <div className="flex md:hidden">
           <ProgressIndicatorSection />
