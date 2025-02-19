@@ -1,7 +1,7 @@
 export type User = {
   info: UserInfo;
   plan: Plan;
-  addOn: AddOn;
+  addOns: AddOn[];
 };
 
 export type UserInfo = {
@@ -11,6 +11,7 @@ export type UserInfo = {
 };
 
 export type Plan = {
+  id: string;
   name: string;
   image: Image;
   monthlyPrice: number;
@@ -24,6 +25,7 @@ export type Image = {
 };
 
 export type AddOn = {
+  id: string;
   name: string;
   description: string;
   monthlyPrice: number;

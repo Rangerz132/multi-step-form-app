@@ -11,7 +11,7 @@ const ProgressIndicator = (props: { index: number }) => {
           : "bg-transparent text-white "
       }`}
     >
-      {props.index}
+      {props.index + 1}
     </div>
   );
 };
