@@ -1,4 +1,5 @@
 export type User = {
+  id: string;
   info: UserInfo;
   plan: Plan;
   addOns: AddOn[];

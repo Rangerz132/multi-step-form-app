@@ -1,6 +1,7 @@
 import { createContext, useContext, useState } from "react";
 import { Plan, User } from "../types";
 import { ARCADE_PLAN } from "../data";
+import { v4 as uuidv4 } from "uuid";
 
 type UserContextProviderProps = {
   children: React.ReactNode;
@@ -21,11 +22,13 @@ const InitialUserContext: User = {
   },
   plan: null as unknown as Plan,
   addOns: [],
+  id: "",
 };
 
 export function UserContextProvider({ children }: UserContextProviderProps) {
   const [user, setUser] = useState<User>({
     ...InitialUserContext,
+    id: uuidv4(),
     plan: ARCADE_PLAN,
   });
 
