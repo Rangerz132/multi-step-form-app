@@ -1,19 +1,30 @@
 import { createContext, useContext, useState } from "react";
+import { FormStepData } from "../types";
+import { FORM_STEP_LIST } from "../data";
 
 type FormContextProviderProps = {
   children: React.ReactNode;
 };
 
+type Form = {
+  steps: FormStepData[];
+  stepIndex: number;
+  completed: boolean;
+};
 
 type FormContext = {
-  form: number;
-  setForm: React.Dispatch<React.SetStateAction<number>>;
+  form: Form;
+  setForm: React.Dispatch<React.SetStateAction<Form>>;
 };
 
 export const FormContext = createContext<FormContext | null>(null);
 
 export function FormContextProvider({ children }: FormContextProviderProps) {
-  const [form, setForm] = useState<number>(0);
+  const [form, setForm] = useState<Form>({
+    stepIndex: 0,
+    completed: false,
+    steps: FORM_STEP_LIST,
+  });
 
   return (
     <FormContext.Provider value={{ form, setForm }}>

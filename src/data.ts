@@ -5,6 +5,7 @@ import AdvancedIcon from "./assets/images/icon-advanced.svg";
 import ProIcon from "./assets/images/icon-pro.svg";
 import PlanFormStep from "./components/formStep/PlanFormStep";
 import AddOnFormStep from "./components/formStep/AddOnFormStep";
+import SummaryFormStep from "./components/formStep/SummaryFormStep";
 
 export const ARCADE_PLAN: Plan = {
   id: "1",
@@ -92,7 +93,7 @@ export const ADD_ON_FORM_STEP: FormStepData = {
 export const SUMMARY_FORM_STEP: FormStepData = {
   title: "Finishing up",
   description: "Double-check everything looks OK before confirming.",
-  data: AddOnFormStep,
+  data: SummaryFormStep,
 };
 
 export const FORM_STEP_LIST: FormStepData[] = [

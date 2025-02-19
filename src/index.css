@@ -48,6 +48,10 @@
   }
 
   .cta-1 {
-    @apply bg-primary-marine-blue text-white  capitalize px-4 py-2 rounded-md hover:bg-primary-purplish-blue transition-all duration-200;
+    @apply bg-primary-marine-blue text-white  capitalize px-4 py-2 rounded-md hover:bg-primary-pastel-blue transition-all duration-200;
+  }
+
+  .cta-2 {
+    @apply bg-primary-purplish-blue text-white  capitalize px-4 py-2 rounded-md hover:bg-primary-pastel-blue transition-all duration-200;
   }
 }

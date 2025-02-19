@@ -9,7 +9,7 @@ type CycleContext = {
   setCycle: React.Dispatch<React.SetStateAction<Cycle>>;
 };
 
-export type Cycle = "Monthly" | "Yealy";
+export type Cycle = "Monthly" | "Yearly";
 
 export const CycleContext = createContext<CycleContext | null>(null);
 

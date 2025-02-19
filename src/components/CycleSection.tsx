@@ -5,11 +5,11 @@ const CycleSection = () => {
   const { cycle, setCycle } = useCycleContext(CycleContext);
 
   function handleToggleButtonClick() {
-    setCycle((prevState) => (prevState === "Monthly" ? "Yealy" : "Monthly"));
+    setCycle((prevState) => (prevState === "Monthly" ? "Yearly" : "Monthly"));
   }
 
   return (
-    <div className="flex flex-row w-full items-center justify-center space-x-4 p-4 bg-neutral-alabaster rounded-lg ">
+    <div className="flex flex-row w-full items-center justify-center space-x-4 p-4 bg-neutral-magnolay rounded-lg ">
       <div
         className={`transition-all duration-200 ${
           cycle === "Monthly"
@@ -21,11 +21,11 @@ const CycleSection = () => {
       </div>
       <ToggleButton
         onClick={handleToggleButtonClick}
-        activated={cycle === "Yealy"}
+        activated={cycle === "Yearly"}
       />
       <div
         className={`transition-all duration-200  ${
-          cycle === "Yealy"
+          cycle === "Yearly"
             ? "text-primary-marine-blue"
             : "text-neutral-cool-gray"
         }`}

@@ -1,19 +1,18 @@
-import { useContext } from "react";
 import Button from "./Button";
-import { FormContext } from "../../../contexts/FormContext";
+import { FormContext, useFormContext } from "../../../contexts/FormContext";
 
 const BackButton = () => {
-  const { form, setForm } = useContext<FormContext | null>(FormContext);
+  const { form, setForm } = useFormContext(FormContext);
 
   function handleOnClick() {
-    if (form > 0) {
-      setForm((prevState: number) => prevState - 1);
+    if (form.stepIndex > 0) {
+      setForm({ ...form, stepIndex: form.stepIndex - 1 });
     }
   }
   return (
     <Button
       onClick={handleOnClick}
-      className={`${form > 0 ? "flex" : "hidden"}`}
+      className={`${form.stepIndex > 0 ? "flex" : "hidden"}`}
     >
       Go back
     </Button>

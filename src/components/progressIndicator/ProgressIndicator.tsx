@@ -6,7 +6,7 @@ const ProgressIndicator = (props: { index: number }) => {
   return (
     <div
       className={`rounded-full  border-1 border-white w-8 h-8 flex items-center justify-center transition-all duration-200 ${
-        form === props.index
+        form.stepIndex === props.index
           ? "bg-primary-light-blue text-primary-marine-blue"
           : "bg-transparent text-white "
       }`}

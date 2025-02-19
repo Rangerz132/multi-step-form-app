@@ -19,7 +19,6 @@ function App() {
               <ProgressIndicatorSection />
               <FormManager />
             </div>
-
             <FooterSection />
           </CycleContextProvider>
         </FormContextProvider>

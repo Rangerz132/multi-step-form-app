@@ -43,7 +43,7 @@ const PlanFormStep = () => {
                 {cycle === "Monthly" ? "/mo" : "/yr"}
               </div>
               {/** Plan price saving */}
-              {cycle === "Yealy" && (
+              {cycle === "Yearly" && (
                 <div className="text-sm text-primary-marine-blue">
                   {plan.yearlyPriceSavings}
                 </div>
