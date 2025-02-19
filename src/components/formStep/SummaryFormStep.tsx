@@ -26,7 +26,7 @@ const SummaryFormStep = () => {
   return (
     <div className="flex flex-col space-y-6">
       <div className="rounded-lg">
-        <div className="bg-neutral-magnolay p-6 flex flex-col space-y-4">
+        <div className="bg-neutral-magnolay p-6 flex flex-col space-y-4 rounded-md">
           {/** Plan */}
           <div className="flex flex-row justify-between items-center">
             <div className="flex flex-col">
@@ -76,6 +76,7 @@ const SummaryFormStep = () => {
           )}
         </div>
       </div>
+      {/** Total */}
       <div className="flex flex-row items-center justify-between px-6">
         <div className="text-sm">
           Total ({cycle === "Monthly" ? "per month" : "per year"})

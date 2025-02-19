@@ -2,7 +2,7 @@ import ThankYouIcon from "../assets/images/icon-thank-you.svg";
 
 const ConfirmationSection = () => {
   return (
-    <div className="flex flex-col space-y-6 justify-center items-center px-6 py-16">
+    <div className="flex flex-col space-y-6 justify-center items-center py-16">
       {/** Image */}
       <div className="w-15">
         <img src={ThankYouIcon} alt={"Checkmar"} />

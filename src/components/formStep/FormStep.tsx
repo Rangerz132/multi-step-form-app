@@ -2,7 +2,7 @@ import { FormStepData } from "../../types";
 
 const FormStep = (props: { data: FormStepData }) => {
   return (
-    <div className="flex flex-col w-full space-y-3  px-6 py-8 ">
+    <div className="flex flex-col w-full space-y-3">
       <div className="flex flex-col w-full space-y-3">
         {/** Title */}
         <h1>{props.data.title}</h1>

@@ -34,6 +34,7 @@ export type AddOn = {
 
 export type FormStepData = {
   title: string;
+  stepTitle: string;
   description: string;
   data: any;
 };

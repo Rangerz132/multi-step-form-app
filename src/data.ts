@@ -74,24 +74,28 @@ export const ADD_ON_LIST: AddOn[] = [
 
 export const PERSONAL_INFO_FORM_STEP: FormStepData = {
   title: "Personal info",
+  stepTitle: "Your info",
   description: "Please provide your name, email address, and phone number.",
   data: PersonalInfoFormStep,
 };
 
 export const PLAN_FORM_STEP: FormStepData = {
   title: "Select your plan",
+  stepTitle: "Select plan",
   description: "You have the option of monthly or yearly billing",
   data: PlanFormStep,
 };
 
 export const ADD_ON_FORM_STEP: FormStepData = {
   title: "Pick add-ons",
+  stepTitle: "Add-ons",
   description: "Add-ons help enhance your gaming experience",
   data: AddOnFormStep,
 };
 
 export const SUMMARY_FORM_STEP: FormStepData = {
   title: "Finishing up",
+  stepTitle: "Summary",
   description: "Double-check everything looks OK before confirming.",
   data: SummaryFormStep,
 };
