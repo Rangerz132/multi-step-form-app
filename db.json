@@ -1,11 +1,11 @@
 {
   "users": [
     {
-      "id": "e6d1746f-34dd-48ac-8be8-efe33c8a6591",
+      "id": "033f5a8c-e38d-4129-8f80-c776f69dcf69",
       "info": {
-        "name": "",
-        "email": "",
-        "phoneNumber": 0
+        "name": "Anthony Trépanier",
+        "email": "anthony.trepanier@hotmail.com",
+        "phoneNumber": "5148177898"
       },
       "plan": {
         "id": "2",
@@ -20,13 +20,6 @@
       },
       "addOns": [
         {
-          "id": "1",
-          "name": "Online service",
-          "description": "Access to multiplayer games",
-          "monthlyPrice": 1,
-          "yearlyPrice": 10
-        },
-        {
           "id": "2",
           "name": "Larger storage",
           "description": "Extra 1TB of cloud save",
@@ -34,6 +27,26 @@
           "yearlyPrice": 20
         }
       ]
+    },
+    {
+      "id": "0cc83122-c78b-4645-af8e-2f6d166a1bb1",
+      "info": {
+        "name": "as",
+        "email": "anthony.trepanier@hotmail.com",
+        "phoneNumber": "1222222"
+      },
+      "plan": {
+        "id": "1",
+        "name": "Arcade",
+        "image": {
+          "src": "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='40'%20height='40'%20viewBox='0%200%2040%2040'%3e%3cg%20fill='none'%20fill-rule='evenodd'%3e%3ccircle%20cx='20'%20cy='20'%20r='20'%20fill='%23FFAF7E'/%3e%3cpath%20fill='%23FFF'%20fill-rule='nonzero'%20d='M24.995%2018.005h-3.998v5.998h-2v-5.998H15a1%201%200%200%200-1%201V29a1%201%200%200%200%201%201h9.995a1%201%200%200%200%201-1v-9.995a1%201%200%200%200-1-1Zm-5.997%208.996h-2v-1.999h2v2Zm2-11.175a2.999%202.999%200%201%200-2%200v2.18h2v-2.18Z'/%3e%3c/g%3e%3c/svg%3e",
+          "alt": "Arcade icon"
+        },
+        "monthlyPrice": 9,
+        "yearlyPrice": 90,
+        "yearlyPriceSavings": "2 months free"
+      },
+      "addOns": []
     }
   ]
 }

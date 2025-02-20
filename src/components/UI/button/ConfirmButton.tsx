@@ -17,7 +17,10 @@ const ConfirmButton = () => {
   }
 
   return (
-    <Button onClick={() => handleButtonClick()} className="cta-2">
+    <Button
+      onClick={() => handleButtonClick()}
+      className="bg-primary-purplish-blue text-white  capitalize px-4 py-2 rounded-md hover:bg-primary-pastel-blue transition-all duration-200"
+    >
       Confirm
     </Button>
   );

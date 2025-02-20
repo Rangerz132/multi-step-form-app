@@ -9,7 +9,15 @@ const NextStepButton = () => {
   }
 
   return (
-    <Button onClick={() => handleButtonClick()} className="cta-1">
+    <Button
+      disabled={!form.isValid}
+      onClick={() => handleButtonClick()}
+      className={`bg-primary-marine-blue text-white  capitalize px-4 py-2 rounded-md  ${
+        form.isValid
+          ? "hover:bg-primary-purplish-blue transition-all duration-200"
+          : "opacity-50"
+      }`}
+    >
       Next step
     </Button>
   );

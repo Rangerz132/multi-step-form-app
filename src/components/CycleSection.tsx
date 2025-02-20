@@ -10,6 +10,7 @@ const CycleSection = () => {
 
   return (
     <div className="flex flex-row w-full items-center justify-center space-x-4 p-4 bg-neutral-magnolay rounded-lg ">
+      {/** Monthly */}
       <div
         className={`transition-all duration-200 ${
           cycle === "Monthly"
@@ -19,10 +20,12 @@ const CycleSection = () => {
       >
         Monthly
       </div>
+      {/** Toggle button */}
       <ToggleButton
         onClick={handleToggleButtonClick}
         activated={cycle === "Yearly"}
       />
+      {/** Yearly */}
       <div
         className={`transition-all duration-200  ${
           cycle === "Yearly"

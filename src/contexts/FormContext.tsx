@@ -10,6 +10,8 @@ type Form = {
   steps: FormStepData[];
   stepIndex: number;
   completed: boolean;
+  errors: { [key: string]: string };
+  isValid: boolean;
 };
 
 type FormContext = {
@@ -24,6 +26,8 @@ export function FormContextProvider({ children }: FormContextProviderProps) {
     stepIndex: 0,
     completed: false,
     steps: FORM_STEP_LIST,
+    errors: {},
+    isValid: false,
   });
 
   return (

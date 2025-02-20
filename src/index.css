@@ -46,12 +46,4 @@
   .form-input {
     @apply w-full outline-primary-purplish-blue focus:outline-[0.5px] p-3 border-1 border-neutral-light-gray rounded-lg text-neutral-cool-gray;
   }
-
-  .cta-1 {
-    @apply bg-primary-marine-blue text-white  capitalize px-4 py-2 rounded-md hover:bg-primary-pastel-blue transition-all duration-200;
-  }
-
-  .cta-2 {
-    @apply bg-primary-purplish-blue text-white  capitalize px-4 py-2 rounded-md hover:bg-primary-pastel-blue transition-all duration-200;
-  }
 }
