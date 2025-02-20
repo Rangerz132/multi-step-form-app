@@ -1,50 +1,41 @@
-# React + TypeScript + Vite
+# Multi-Step Form App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
 
-Currently, two official plugins are available:
+The Multi-Step Form App is a React-based project designed to create a seamless, interactive, and responsive multi-step form experience. Built with React, JSON-Server, and Tailwind CSS, this project emphasizes modern UI design, form validation, and smooth data handling.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Getting started
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+```bash
+npm i
+npm run dev-server
+npm run dev
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## Technologies Used
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+- React: Component-based UI development.
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+- Tailwind CSS: Provides utility-first styling for a responsive design.
+
+- JSON-Server : Simulates a backend API to handle form data.
+
+
+## Features
+
+- Responsive layout with Tailwind CSS.
+
+- Clean and modern design.
+
+- Modular and reusable components.
+
+- Multi-step form navigation with a progress indicator.
+
+- Form validation to ensure accurate user input.
+
+- Data submission using JSON-Server.
+
+
+## Media
+
+![](src/assets/design/desktop-design-step-1.jpg)
